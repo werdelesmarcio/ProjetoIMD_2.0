@@ -11,6 +11,7 @@ class Animais
 public:
     Animais(string tipo, string raca, string idade, string codigo);
     ~Animais();
+    
     string getTipo() const;
     string getRaca() const;
     string getIdade() const;
