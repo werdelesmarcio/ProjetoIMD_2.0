@@ -7,15 +7,25 @@
 
 using namespace std;
 
-//Classe que trata dos animais e de suas características.
-class Animais {
+enum tipoAnimal
+{
+    anfibio,
+    reptil,
+    mamifero,
+    ave
+};
 
-private:
-// Método interno usado para verificar o cadastro do animal
-    string tipo;
-    string raca;
-    string idade;
-    string codigo;
+enum classifAnimal
+{
+    silvestreNativo,
+    silvestreExotico,
+    domesticoNativo,
+    domesticoExotico
+};
+
+//Classe que trata dos animais e de suas características.
+class Animal
+{
 
 public:
     string getTipo();
@@ -27,7 +37,15 @@ public:
     string getCodigo();
     void setCodigo(string codigo_);
 
-// Este método lê os dados do animal. Acessando os métodos que irão preencher e efetivar a operação.
+    // Este método lê os dados do animal. Acessando os métodos que irão preencher e efetivar a operação.
+    /**
+private:
+// Método interno usado para verificar o cadastro do animal
+    string tipo;
+    string raca;
+    string idade;
+    string codigo;
+**/
 };
 
 #endif
