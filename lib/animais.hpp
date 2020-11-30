@@ -11,7 +11,7 @@ using namespace std;
 class Animais {
 
 private:
-    // Método interno usado para verificar o cadastro do animal
+// Método interno usado para verificar o cadastro do animal
     string tipo;
     string raca;
     string idade;
@@ -27,10 +27,7 @@ public:
     string getCodigo();
     void setCodigo(string codigo_);
 
-       /** Este método lê os dados do animal.
-         * puxando os métodos que irão
-         * preencher e efetivar a operação
-        **/
+// Este método lê os dados do animal. Acessando os métodos que irão preencher e efetivar a operação.
 };
 
 #endif
