@@ -1,5 +1,7 @@
-#ifndef _VETERINARIO_
-#define _VETERINARIO_
+#pragma once
+
+#ifndef _VETERINARIO_H_
+#define _VETERINARIO_H_
 
 #include <iostream>
 
@@ -22,6 +24,8 @@ public:
     void setTelefone(string telefone_);
     string getEmail();
     void setEmail(string email_);
+    string getEndereco();
+    void setEndereco(string endereco_);
 };
 
 #endif

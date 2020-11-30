@@ -1,5 +1,7 @@
-#ifndef _TRATADOR_
-#define _TRATADOR_
+#pragma once
+
+#ifndef _TRATADOR_H_
+#define _TRATADOR_H_
 
 #include <iostream>
 
