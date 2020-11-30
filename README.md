@@ -1,5 +1,8 @@
 # Pet-Fera Versão 1.0 (Beta)
 
+[![GitHub issues](https://img.shields.io/github/issues/werdelesmarcio/ProjetoIMD_2.0)](https://github.com/werdelesmarcio/ProjetoIMD_2.0/issues)
+
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Vault-Cyber-Security_ReconSpyDER&metric=bugs)](https://sonarcloud.io/dashboard?id=Vault-Cyber-Security_ReconSpyDER)  [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Vault-Cyber-Security_ReconSpyDER&metric=security_rating)](https://sonarcloud.io/dashboard?id=Vault-Cyber-Security_ReconSpyDER)  [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Vault-Cyber-Security_ReconSpyDER&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Vault-Cyber-Security_ReconSpyDER)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Vault-Cyber-Security_ReconSpyDER&metric=alert_status)](https://sonarcloud.io/dashboard?id=Vault-Cyber-Security_ReconSpyDER)  <img alt="Counter Code" src="https://img.shields.io/github/languages/count/Vault-Cyber-Security/ReconSpyDER">  <img alt="License" src="https://img.shields.io/github/license/Vault-Cyber-Security/ReconSpyDER">  <img alt="Issues" src="https://img.shields.io/github/issues/Vault-Cyber-Security/ReconSpyDER">  <img alt="Fork" src="https://img.shields.io/github/forks/Vault-Cyber-Security/ReconSpyDER?logo=github">
 
 ## Repositório para a aplicação Pet-Fera.
