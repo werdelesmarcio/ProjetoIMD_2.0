@@ -1,41 +1,33 @@
 #pragma once
 
-#include <vector>
-#include <string>
+#ifndef _ANIMAIS_H_
+#define _ANIMAIS_H_
 
-using std::string;
-using std::vector;
+#include <iostream>
 
-class Animais
-{
-public:
-    Animais(string tipo, string raca, string idade, string codigo);
-    ~Animais();
-    
-    string getTipo() const;
-    string getRaca() const;
-    string getIdade() const;
-    string getCodigo() const;
+using namespace std;
 
-    /** Este método lê os dados do animal.
-         * puxando os métodos que irão
-         * preencher e efetivar a operação
-        **/
-
-    //Interface com os usuários do sistema
-    void novoAnimal();
-    void removeAnimal();
-    void vendeAnimal();
-    void listaAnimal();
-
-    //Metodos para realizar as operações
-
-    void imprimeListaAnimais(string codigo);
+//Classe que trata dos animais e de suas características.
+class Animais {
 
 private:
-    // Método interno usado para verificar o cadastro do animal
+// Método interno usado para verificar o cadastro do animal
     string tipo;
     string raca;
     string idade;
     string codigo;
+
+public:
+    string getTipo();
+    void setTipo(string tipo_);
+    string getRaca();
+    void setRaca(string raca_);
+    string getIdade();
+    void setIdade(string idade_);
+    string getCodigo();
+    void setCodigo(string codigo_);
+
+// Este método lê os dados do animal. Acessando os métodos que irão preencher e efetivar a operação.
 };
+
+#endif
