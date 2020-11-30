@@ -31,6 +31,6 @@ Consulte o arquivo [LICENSE.md](https://github.com/werdelesmarcio/ProjetoIMD_2.0
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para werdelesmarcio@gmail.com. Obrigado!
 
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Vault-Cyber-Security/ReconSpyDER?style=for-the-badge">  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Vault-Cyber-Security/ReconSpyDER?style=for-the-badge">  <img alt="GitHub contributors" src="https://img.shields.io/github/repo-size/Vault-Cyber-Security/ReconSpyDER?label=REPOSIT%C3%93RIO&logo=GITHUB&style=for-the-badge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/werdelesmarcio/ProjetoIMD_2.0?style=for-the-badge">  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Vault-Cyber-Security/ReconSpyDER?style=for-the-badge">  <img alt="GitHub contributors" src="https://img.shields.io/github/repo-size/Vault-Cyber-Security/ReconSpyDER?label=REPOSIT%C3%93RIO&logo=GITHUB&style=for-the-badge">
 
 <center><img src = "https://github.com/Vault-Cyber-Security/ReconSpyDER/blob/master/Images/gnulinux-logo.png" width=300></center>
