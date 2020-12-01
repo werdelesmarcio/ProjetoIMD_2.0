@@ -1,27 +1,38 @@
 #ifndef _VETERINARIO_
 #define _VETERINARIO_
 
+#include "funcionario.hpp"
+
 #include <iostream>
 
 using namespace std;
 
-class Veterinario {
+enum especialidade
+{
+    clinicoGeral,
+    cirurgiao,
+    anestesista,
+    cardiologista,
+    neurologista,
+    psicologo,
+    nutricionista
 
-private:
-    string especialidade;
-    string nome;
-    string telefone;
-    string email;
-    string endereco;
-    //Animal* animal[]; //quais animais estar sendo acompanhado pelo veterinario
+};
+
+class Veterinario: public Funcionario {
 
 public:
-    string getNome();
-    void setNome(string nome_);
-    string getTelefone();
-    void setTelefone(string telefone_);
-    string getEmail();
-    void setEmail(string email_);
+    Veterinario();
+    Veterinario(string nome, string telefone, 
+                   string email, string endereco);
+    ~Veterinario();
+
+
+private:
+  
+    string especialidade;
+
+
 };
 
 #endif
