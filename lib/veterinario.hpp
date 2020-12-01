@@ -27,6 +27,14 @@ public:
                    string email, string endereco);
     ~Veterinario();
 
+    string getNome();
+    void setNome(string nome_);
+    string getTelefone();
+    void setTelefone(string telefone_);
+    string getEmail();
+    void setEmail(string email_);
+    string getEndereco();
+    void setEndereco(string endereco_);
 
 private:
   
