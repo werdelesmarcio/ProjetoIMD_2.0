@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef _ANIMAIS_H_
-#define _ANIMAIS_H_
+#ifndef _ANIMAIS_
+#define _ANIMAIS_
 
 #include <iostream>
 
@@ -26,26 +26,31 @@ enum classifAnimal
 //Classe que trata dos animais e de suas características.
 class Animal
 {
+private:
+    // Método interno usado para verificar o cadastro do animal
+    string codigo;
+    string familia;
+    string especie;
+    string raca;
+    string habitat;
+    string nascimento;
+    string dataentrada;
 
 public:
-    string getTipo();
-    void setTipo(string tipo_);
-    string getRaca();
-    void setRaca(string raca_);
-    string getIdade();
-    void setIdade(string idade_);
     string getCodigo();
     void setCodigo(string codigo_);
-
-    // Este método lê os dados do animal. Acessando os métodos que irão preencher e efetivar a operação.
-    /**
-private:
-// Método interno usado para verificar o cadastro do animal
-    string tipo;
-    string raca;
-    string idade;
-    string codigo;
-**/
+    string getFamilia();
+    void setFamilia(string familia_);
+    string getEspecie();
+    void setEspecie(string especie_);
+    string getRaca();
+    void setRaca(string raca_);
+    string getHabitat();
+    void setHabitat(string habitat_);
+    string getNascimento();
+    void setNascimento(string nascimento_);
+    string getDataEntrada();
+    void setDataEntrada(string dataentrada_);
 };
 
 #endif
