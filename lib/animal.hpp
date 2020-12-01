@@ -32,6 +32,9 @@ private:
     string nascimento;
     string dataentrada;
 
+    string familia;
+    string habitat;
+
 public:
     Animal();
     Animal(string codigo, string especie, string raca,
