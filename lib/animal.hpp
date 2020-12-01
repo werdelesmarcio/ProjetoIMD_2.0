@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef _ANIMAIS_
 #define _ANIMAIS_
 
@@ -7,7 +5,7 @@
 
 using namespace std;
 
-enum tipoAnimal
+enum familia
 {
     anfibio,
     reptil,
@@ -15,7 +13,7 @@ enum tipoAnimal
     ave
 };
 
-enum classifAnimal
+enum habitat
 {
     silvestreNativo,
     silvestreExotico,
@@ -29,27 +27,27 @@ class Animal
 private:
     // Método interno usado para verificar o cadastro do animal
     string codigo;
-    string familia;
     string especie;
     string raca;
-    string habitat;
     string nascimento;
     string dataentrada;
 
 public:
+    Animal();
+    Animal(string codigo, string especie, string raca,
+            string nascimento, string dataentrada);
+
+    ~Animal();
     string getCodigo();
-    void setCodigo(string codigo_);
-    string getFamilia();
-    void setFamilia(string familia_);
     string getEspecie();
-    void setEspecie(string especie_);
     string getRaca();
-    void setRaca(string raca_);
-    string getHabitat();
-    void setHabitat(string habitat_);
     string getNascimento();
-    void setNascimento(string nascimento_);
     string getDataEntrada();
+
+    void setCodigo(string codigo_);
+    void setEspecie(string especie_);
+    void setRaca(string raca_);
+    void setNascimento(string nascimento_);
     void setDataEntrada(string dataentrada_);
 };
 

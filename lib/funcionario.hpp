@@ -40,7 +40,6 @@ public:
     void setTelefone(string telefone);
     void setEmail(string email);
     void setEndereco(string endereco);
-
 };
 
 #endif
