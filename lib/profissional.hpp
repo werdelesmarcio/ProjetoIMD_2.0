@@ -3,29 +3,34 @@
 
 #include <iostream>
 
+#include "funcionario.hpp"
+
 using namespace std;
+
+enum funcao
+{
+    recepcionista,
+    limpeza,
+    motorista,
+    limpezaLocalAnimais,
+    preparacaoDeAlimentos
+
+};
 
 //#pessoas que trabalha na recepão, na limpeza do 
 //local(recepção, banheiros, sala de espera), 
 //motorista
-class Profissional {
-
-private:
-    string nome;
-    string telefone;
-    string email;
-    string funcao;
-    string endereco;
+class Profissional: public Funcionario {
 
 public:
-    string getNome();
-    void setNome(string nome_);
-    string getTelefone();
-    void setTelefone(string telefone_);
-    string getEmail();
-    void setEmail(string email_);
-    string getEndereco();
-    void setEndereco(string endereco_);
+    Profissional();
+    Profissional(string nome, string telefone, 
+                   string email, string endereco);
+    ~Profissional();
+
+private:
+
+    string funcao;
 
 };
 
