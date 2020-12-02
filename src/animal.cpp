@@ -7,9 +7,8 @@ using namespace std;
 
 //lista de inicializadores de atributos
 Animal::Animal(string codigo, string especie, tpFamilia familia,
-               string raca, tpHabitat habitat, string nascimento, string dataentrada) : 
-               codigo(codigo), especie(especie), familia(familia), raca(raca),
-               habitat(habitat), nascimento(nascimento), dataentrada(dataentrada)
+               string raca, tpHabitat habitat, string nascimento, string dataentrada) : codigo(codigo), especie(especie), familia(familia), raca(raca),
+                                                                                        habitat(habitat), nascimento(nascimento), dataentrada(dataentrada)
 {
     cout << " Novo animal adicionado " << this->codigo << " construido." << endl;
 }
@@ -39,6 +38,11 @@ void Animal::setEspecie(string especie_)
     this->especie = especie_;
 }
 
+tpFamilia Animal::getFamilia()
+{
+    return this->familia;
+}
+
 void Animal::setFamilia(tpFamilia familia_)
 {
     this->familia = familia_;
@@ -49,13 +53,19 @@ string Animal::getRaca()
     return this->raca;
 }
 
+tpHabitat Animal::getHabitat()
+{
+    return this->habitat;
+}
+
 void Animal::setRaca(string raca_)
 {
     this->raca = raca_;
 }
 
-void Animal::setHabitat(tpHabitat habitat_){
-    this -> habitat = habitat_;
+void Animal::setHabitat(tpHabitat habitat_)
+{
+    this->habitat = habitat_;
 }
 
 string Animal::getNascimento()

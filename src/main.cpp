@@ -1,13 +1,15 @@
 #include <iostream>
 #include "syscomm.cpp"
 
+#include "animal.hpp"
+
 void menuPrincipal() {
 	char opcao;
 	limpaTela();
 	do {
-        	cout<< endl << "+----------------------------------------+";
-       		cout<< endl << "|      PET-FERA - VERSAO 1.0 (BETA)      |";
-     		cout<< endl << "+----------------------------------------+";
+        cout<< endl << "+----------------------------------------+";
+       	cout<< endl << "|      PET-FERA - VERSAO 1.0 (BETA)      |";
+     	cout<< endl << "+----------------------------------------+";
 		cout<< endl << "|                 OPCOES:                |";
 		cout<< endl << "+----------------------------------------+";
 		cout<< endl << "| A - Cadastrar um Animal.               |";
