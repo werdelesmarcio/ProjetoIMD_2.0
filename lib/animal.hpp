@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef _ANIMAIS_
 #define _ANIMAIS_
 
@@ -37,14 +39,13 @@ private:
 
 public:
     Animal();
-    
-    Animal(string codigo, string especie, tpFamilia familia, 
-           string raca, tpHabitat habitat, string nascimento, string dataentrada):
-           codigo(codigo), especie(especie), familia(familia), raca(raca), 
-           habitat(habitat), nascimento(nascimento), dataentrada(dataentrada){};
+
+    Animal(string codigo, string especie, tpFamilia familia,
+           string raca, tpHabitat habitat, string nascimento, string dataentrada) : codigo(codigo), especie(especie), familia(familia), raca(raca),
+                                                                                    habitat(habitat), nascimento(nascimento), dataentrada(dataentrada){};
 
     virtual ~Animal(){};
-    
+
     string getCodigo();
     string getEspecie();
     tpFamilia getFamilia();

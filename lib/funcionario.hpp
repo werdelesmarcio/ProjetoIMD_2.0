@@ -18,20 +18,20 @@ enum funcao
 
 };
 
-class Funcionario {
+class Funcionario
+{
 
-//pode ser acessado pela propria classee pelos metodos derivados da classe(subclasses)
+    //pode ser acessado pela propria classee pelos metodos derivados da classe(subclasses)
 protected:
-    string nome; 
+    string nome;
     string telefone;
     string email;
-    string endereco;  
+    string endereco;
 
 public:
-   
     Funcionario();
-    Funcionario(string nome, string telefone, 
-                  string email, string endereco);
+    Funcionario(string nome, string telefone,
+                string email, string endereco);
     ~Funcionario();
     string getNome();
     string getTelefone();

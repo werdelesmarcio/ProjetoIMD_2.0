@@ -5,8 +5,9 @@
 
 using namespace std;
 
-Funcionario::Funcionario(string nome, string telefone, string email, string endereco) : 
-                         nome(nome), telefone(telefone), email(email), endereco(endereco)
+Funcionario::Funcionario(string nome, string telefone,
+                         string email, string endereco) : nome(nome), telefone(telefone),
+                                                          email(email), endereco(endereco)
 {
     cout << "Funcionrio " << this->nome << " construido " << endl;
 }

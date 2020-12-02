@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef _VETERINARIO_H_
-#define _VETERINARIO_H_
+#ifndef _VETERINARIO_
+#define _VETERINARIO_
 
 #include "funcionario.hpp"
 
@@ -21,12 +21,13 @@ enum especialidade
 
 };
 
-class Veterinario: public Funcionario {
+class Veterinario : public Funcionario
+{
 
 public:
     Veterinario();
-    Veterinario(string nome, string telefone, 
-                   string email, string endereco);
+    Veterinario(string nome, string telefone,
+                string email, string endereco);
     ~Veterinario();
 
     string getNome();
@@ -39,7 +40,6 @@ public:
     void setEndereco(string endereco_);
 
 private:
-  
     string especialidade;
 };
 

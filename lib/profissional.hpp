@@ -19,21 +19,20 @@ enum funcao
 
 };
 
-//#pessoas que trabalha na recepão, na limpeza do 
-//local(recepção, banheiros, sala de espera), 
+//#pessoas que trabalha na recepão, na limpeza do
+//local(recepção, banheiros, sala de espera),
 //motorista
-class Profissional: public Funcionario {
+class Profissional : public Funcionario
+{
 
 public:
     Profissional();
-    Profissional(string nome, string telefone, 
-                   string email, string endereco);
+    Profissional(string nome, string telefone,
+                 string email, string endereco);
     ~Profissional();
 
 private:
-
     string funcao;
-
 };
 
 #endif
