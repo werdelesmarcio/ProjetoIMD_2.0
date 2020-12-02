@@ -1,5 +1,7 @@
-#ifndef _PROFISSIONAL_
-#define _PROFISSIONAL_
+#pragma once
+
+#ifndef _PROFISSIONAL_H_
+#define _PROFISSIONAL_H_
 
 #include <iostream>
 

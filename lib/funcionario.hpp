@@ -1,5 +1,7 @@
-#ifndef _FUNCIONARIO_
-#define _FUNCIONARIO_
+#pragma once
+
+#ifndef _FUNCIONARIO_H_
+#define _FUNCIONARIO_H_
 
 #include <iostream>
 #include <list>
