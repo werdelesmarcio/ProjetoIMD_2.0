@@ -7,22 +7,10 @@
 #include <list>
 
 #include "veterinario.hpp"
-#include "tratador.hpp"
-#include "profissional.hpp"
+
+#define CAPACIDADE_MAX 5
 
 using namespace std;
-
-enum especialidade
-{
-    clinicoGeral,
-    cirurgiao,
-    anestesista,
-    cardiologista,
-    neurologista,
-    psicologo,
-    nutricionista
-
-};
 
 enum funcao
 {
@@ -36,24 +24,40 @@ enum funcao
 
 class Funcionario {
 
+//atributos pode ser acessado pela propria classe pelos metodos derivados da classe(subclasses)
+protected:
+    string id;
+    string nome; 
+    string telefone;
+    string email;
+    string endereco;
+    int qtd_funcionario = 0;
+
 private:
-    //string nome;   
-    Veterinario* veterinario[];
-    //Tratador* tratador[];
-    //Profissional* profissional[];
-    int qtdProfissionais = 0;
-    int qtdVeterinarios = 0;
-    int qtdTratadores = 0;
+    Veterinario* veterinario[CAPACIDADE_MAX];
 
 public:
-    //string getNome();
-    //void setNome(string nome_);
+   
+    Funcionario();
+    Funcionario(string id, string nome, string telefone, 
+                  string email, string endereco);
+    ~Funcionario();
+    string getId();
+    string getNome();
+    string getTelefone();
+    string getEmail();
+    string getEndereco();
+
+    void setId(string id);
+    void setNome(string nome);
+    void setTelefone(string telefone);
+    void setEmail(string email);
+    void setEndereco(string endereco);
+
     void addVeterinario(Veterinario* novo);
-    void removVeterinario(string nome);
-    void addTratador(Tratador* novo);
-    void removTratador(string nome);
-    void addProfissional(Tratador* novo);
-    void removProfissional(string nome);
+	void remVeterinario(string nome);
+	void listarVeterinarios();
+
 };
 
 #endif

@@ -1,23 +1,35 @@
 #pragma once
 
-#ifndef _VETERINARIO_H_
-#define _VETERINARIO_H_
+#ifndef _VETERINARIO_
+#define _VETERINARIO_
+
+#include "funcionario.hpp"
 
 #include <iostream>
 
 using namespace std;
 
-class Veterinario {
+enum especialidade
+{
+    clinicoGeral,
+    cirurgiao,
+    anestesista,
+    cardiologista,
+    neurologista,
+    psicologo,
+    nutricionista
 
-private:
-    string especialidade;
-    string nome;
-    string telefone;
-    string email;
-    string endereco;
-    //Animal* animal[]; //quais animais estar sendo acompanhado pelo veterinario
+};
+
+class Veterinario : public Funcionario
+{
 
 public:
+    Veterinario();
+    Veterinario(string nome, string telefone,
+                string email, string endereco);
+    ~Veterinario();
+
     string getNome();
     void setNome(string nome_);
     string getTelefone();
@@ -26,6 +38,9 @@ public:
     void setEmail(string email_);
     string getEndereco();
     void setEndereco(string endereco_);
+
+private:
+    string especialidade;
 };
 
 #endif
