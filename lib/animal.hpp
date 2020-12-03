@@ -3,9 +3,9 @@
 #ifndef _ANIMAIS_
 #define _ANIMAIS_
 
-#include <iostream>
+#include <string>
 
-using namespace std;
+using std::string;
 
 enum tpFamilia
 {
@@ -40,9 +40,13 @@ private:
 public:
     Animal();
 
-    Animal(string codigo, string especie, tpFamilia familia,
-           string raca, tpHabitat habitat, string nascimento, string dataentrada) : codigo(codigo), especie(especie), familia(familia), raca(raca),
-                                                                                    habitat(habitat), nascimento(nascimento), dataentrada(dataentrada){};
+    Animal(string codigo,
+           string especie,
+           tpFamilia familia,
+           string raca,
+           tpHabitat habitat,
+           string nascimento,
+           string dataentrada);
 
     virtual ~Animal(){};
 
@@ -53,6 +57,8 @@ public:
     tpHabitat getHabitat();
     string getNascimento();
     string getDataEntrada();
+
+    void listarAnimal();
 
     void setCodigo(string codigo_);
     void setEspecie(string especie_);
