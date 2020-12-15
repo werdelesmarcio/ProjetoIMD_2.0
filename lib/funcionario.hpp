@@ -12,7 +12,7 @@
 
 using namespace std;
 
-enum funcao
+enum Funcao
 {
     recepcionista,
     limpeza,
@@ -22,42 +22,50 @@ enum funcao
 
 };
 
-class Funcionario {
-
-//atributos pode ser acessado pela propria classe pelos metodos derivados da classe(subclasses)
-protected:
-    string id;
-    string nome; 
+class Funcionario
+{
+    //atributos pode ser acessado pela propria classe pelos metodos derivados da classe(subclasses)
+private:
+    string codigo;
+    string nome;
+    Funcao funcao;
     string telefone;
     string email;
     string endereco;
     int qtd_funcionario = 0;
-
-private:
     Veterinario* veterinario[CAPACIDADE_MAX];
 
 public:
-   
     Funcionario();
-    Funcionario(string id, string nome, string telefone, 
-                  string email, string endereco);
+
+    Funcionario(string codigo,
+                string nome,
+                Funcao funcao,
+                string telefone,
+                string email,
+                string endereco);
+
     ~Funcionario();
-    string getId();
+
+    string getCodigo();
     string getNome();
+    Funcao getFuncao();
     string getTelefone();
     string getEmail();
     string getEndereco();
 
-    void setId(string id);
-    void setNome(string nome);
-    void setTelefone(string telefone);
-    void setEmail(string email);
-    void setEndereco(string endereco);
+    void listaFuncionario();
 
-    void addVeterinario(Veterinario* novo);
-	void remVeterinario(string nome);
-	void listarVeterinarios();
+    void setCodigo(string codigo_);
+    void setNome(string nome_);
+    void setFuncao(Funcao funcao_);
+    void setTelefone(string telefone_);
+    void setEmail(string email_);
+    void setEndereco(string endereco_);
 
+    void addVeterinario(Veterinario *novo);
+    void remVeterinario(string nome);
+    void listarVeterinarios();
 };
 
 #endif
