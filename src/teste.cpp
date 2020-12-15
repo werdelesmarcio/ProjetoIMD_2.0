@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <vector>
 
 #include "funcionario.hpp"
@@ -16,7 +17,8 @@ int main() {
 	Funcionario vet01("vet","Paulo Fernandes", "849872133420", "paulofernandes@hotmail.com","Rua florliz,554, Bairro das flores");
 
 	cout << "----------Veterinario inserido----------" << endl;
-	cout << vet01.getId() << " - " << vet01.getNome() << endl;
+	cout << vet01.getCodigo() << " - " << vet01.getNome() << endl;
+
 	//Veterinario* veterinario1 = new Veterinario("")
 
 	//vector<int> vetor;
