@@ -1,5 +1,5 @@
 #Makefile for "imd0030" C++ application
-#Created by Silvio Sampaio 10/08/2016
+#Created by Werdeles Marcio 16/12/2020
 
 BIN = ./bin
 SRC = ./src
