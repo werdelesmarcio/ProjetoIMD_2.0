@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-#include "funcionario.hpp"
+#include "funcionario.h"
+
 
 using namespace std;
 

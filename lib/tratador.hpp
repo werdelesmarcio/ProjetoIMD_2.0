@@ -16,11 +16,19 @@ class Tratador : public Funcionario
 
 public:
     Tratador();
-    Tratador(string nome, string telefone,
-             string email, string endereco);
+    
+    Tratador(string nome, 
+             string telefone,
+             string email, 
+             string endereco);
+
     ~Tratador();
 
 private:
+    string nome;
+    string telefone;
+    string email;
+    string endereco;
     string funcao;
 };
 
