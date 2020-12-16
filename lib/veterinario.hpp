@@ -26,8 +26,12 @@ class Veterinario : public Funcionario
 
 public:
     Veterinario();
-    Veterinario(string nome, string telefone,
-                string email, string endereco);
+
+    Veterinario(string nome,
+                string telefone,
+                string email, 
+                string endereco);
+                
     ~Veterinario();
 
     string getNome();
@@ -41,6 +45,10 @@ public:
 
 private:
     string especialidade;
+    string nome;
+    string telefone;
+    string email;
+    string endereco;
 };
 
 #endif

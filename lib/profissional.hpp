@@ -16,7 +16,6 @@ enum funcao
     motorista,
     limpezaLocalAnimais,
     preparacaoDeAlimentos
-
 };
 
 //#pessoas que trabalha na recepão, na limpeza do
@@ -24,14 +23,20 @@ enum funcao
 //motorista
 class Profissional : public Funcionario
 {
-
 public:
     Profissional();
-    Profissional(string nome, string telefone,
-                 string email, string endereco);
+    Profissional(string nome, 
+                 string telefone,
+                 string email, 
+                 string endereco);
+                 
     ~Profissional();
 
 private:
+    string nome;
+    string telefone;
+    string email;
+    string endereco;
     string funcao;
 };
 

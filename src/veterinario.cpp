@@ -6,8 +6,13 @@
 using namespace std;
 
 //lista de inicializadores de atributos
-Veterinario::Veterinario(string nome, string telefone,
-                         string email, string endereco) : Funcionario(nome, telefone, email, endereco)
+Veterinario::Veterinario(string nome,
+                         string telefone,
+                         string email, 
+                         string endereco) : Veterinario(nome, 
+                                                        telefone, 
+                                                        email, 
+                                                        endereco)
 {
 
     cout << " Novo veterinario adicionado " << this->nome << " construido." << endl;
